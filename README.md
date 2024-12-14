@@ -28,8 +28,3 @@ Smart Spender is a simple and interactive project built using Vanilla HTML, CSS,
 - CSS  
 - JavaScript  
 
-## Future Improvements  
-- Add categories for transactions for better analysis.  
-- Enable filtering by date range.  
-- Include downloadable reports in PDF/CSV format.  
-
