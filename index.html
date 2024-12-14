@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartSpender</title>
+    <link rel="stylesheet" href="stylee.css" />
+</head>
+<body>
+    <div id="project">
+        <div id="header">
+            <h1>SmartSpender</h1>
+        </div>
+        <div id="total">
+            <div id="titleoutput">
+                <h1>Budget summary</h1>
+            </div>
+            <div id="outpu">
+                <p>Income:</p>
+                <h1 id="incometxt">0</h1>
+                <p>Expense:</p>
+                <h1 id="expensetxt">0</h1>
+                <p>Balance:</p>
+                <h1 id="balancetxt">0</h1>
+            </div>
+        </div>
+        <div id="body">
+            <div id="inputs">
+                <h1>Add Transaction</h1>
+                <div id="buttons">
+                    <button id="expense">Expense</button>
+                    <button id="income">Income</button>
+                </div>
+                <h1>Note:</h1>
+                <input type="text" id="note" />
+                <div id="inputss">
+                    <h1>Amount</h1>
+                    <h1>Date</h1>
+                </div>
+                <div id="numbersinput">
+                    <input type="number" placeholder="Amount" />
+                    <input type="date" />
+                </div>
+                <button id="submit" style="width: 100%">Submit</button>
+            </div>
+            <div id="table">
+                <h1 style="color: black">Transaction Table</h1>
+                <table id="transactionTable">
+                    <thead>
+                        <tr>
+                            <th>Note</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="chart">
+        <canvas id="balanceChart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
