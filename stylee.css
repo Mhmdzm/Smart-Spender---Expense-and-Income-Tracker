@@ -188,3 +188,18 @@ input {
   align-items: center;
   gap: 140px;
 }
+
+#chart {
+  margin-top: 840px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#balanceChart {
+  width: 90%;
+  max-width: 800px;
+  height: 400px;
+  background-color: #5a5f9d;
+  border-radius: 30px;
+}

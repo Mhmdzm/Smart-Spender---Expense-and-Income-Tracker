@@ -186,3 +186,41 @@ function updateTotalsOnLoad(transactions) {
   });
   updateTotals(0);
 }
+
+function updateGraph() {
+  const ctx = document.getElementById("balanceChart").getContext("2d");
+
+  const labels = transactions.map((t) => t.note);
+  const data = transactions.map((t) => t.amount);
+
+  if (chart) {
+    chart.destroy();
+  }
+
+  chart = new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels,
+      datasets: [
+        {
+          label: "Transaction Amount",
+          data,
+          backgroundColor: data.map((amount) =>
+            amount < 0 ? "rgba(255, 99, 132, 0.2)" : "rgba(75, 192, 192, 0.2)"
+          ),
+          borderColor: data.map((amount) =>
+            amount < 0 ? "rgba(255, 99, 132, 1)" : "rgba(75, 192, 192, 1)"
+          ),
+          borderWidth: 1,
+        },
+      ],
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true,
+        },
+      },
+    },
+  });
+}
