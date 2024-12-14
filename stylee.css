@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(black 30%, blueviolet);
+  height: auto;
+  height: 150vh;
+}
+
+#header {
+  position: fixed;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 40px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 20px;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+#total {
+  position: absolute;
+  color: white;
+  text-align: center;
+  border: none;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #5a5f9d;
+  border-radius: 50px;
+  width: 1000px;
+  height: 220px;
+  box-shadow: 10px 10px 10px #58109c5b;
+}
+
+#outpu {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 800px;
+  height: 60px;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 80px;
+}
+
+#outpu h1 {
+  font-size: 30px;
+  color: black;
+}
+
+#titleoutput {
+  font-size: 20px;
+  padding: 30px;
+  color: black;
+}
+
+#body {
+  display: flex;
+  position: absolute;
+  top: 60%;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  gap: 50px;
+  margin-left: 70px;
+}
+
+#inputs {
+  margin-left: 100px;
+  background-color: #5a5f9d;
+  width: 50%;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 10px 10px 10px #58109c5b;
+  height: 350px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+#table {
+  background-color: #5a5f9d;
+  width: 50%;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 10px 10px 10px #58109c5b;
+  height: 350px;
+  padding: 20px;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+button {
+  margin: 0 10px;
+  border: none;
+  width: 60px;
+  height: 40px;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: black;
+
+}
+
+#numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+
+#numbersinput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+input {
+  outline: none;
+  border: none;
+  height: 20px;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+}
+
+#table {
+  overflow: hidden;
+  color: black;
+}
+
+#transactionTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#transactionTable th,
+#transactionTable td {
+  padding: 10px;
+  text-align: left;
+}
+
+#transactionTable tbody {
+  display: block;
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#transactionTable thead,
+#transactionTable tbody tr {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+#transactionTable tbody td {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#inputss {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 140px;
+}
